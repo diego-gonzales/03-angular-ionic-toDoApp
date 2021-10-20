@@ -1,0 +1,21 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <!-- This color atributte is on theme/variables.scss -->
+  <ion-toolbar color="primary">
+    <ion-title>
+      Pending Tasks
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+  <app-tasks actualTab="pending"></app-tasks>
+
+  <!-- fab placed to the bottom end -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="goToAddTask()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
